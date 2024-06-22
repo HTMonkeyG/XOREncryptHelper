@@ -2,6 +2,7 @@
   MIT License
 
   Copyright (c) 2024 HTMonkeyG
+  https://github.com/HTMonkeyG
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -36,7 +37,7 @@ function checkFileIsEncrypt(buf) {
 /**
  * Encrypt buffer
  * @param {Buffer} buf - file buffer
- * @param {Buffer|Array} key - encrypt key, ascii '88329851' by default
+ * @param {Buffer|Array|undefined} key - encrypt key, ascii '88329851' by default
  * @returns {Buffer} encrypted buffer
  */
 function encryptFile(buf, key) {
@@ -58,7 +59,7 @@ function encryptFile(buf, key) {
 /**
  * Decrypt buffer
  * @param {Buffer} buf - file buffer
- * @param {Buffer|Array} key - decrypt key, ascii '88329851' by default
+ * @param {Buffer|Array|undefined} key - decrypt key, ascii '88329851' by default
  * @returns {Buffer} decrypted buffer
  */
 function decryptFile(buf, key) {
